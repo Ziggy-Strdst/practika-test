@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+    <title>practika-school</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row header align-center space-between">
+          <div class="col header__logo">
+            <a href="index.html">
+              <img src="assets/upload/logo.svg" />
+            </a>
+          </div>
+          <div class="col header__number">
+            <a href="tel:+79185038562">+7 918 503 8562</a>
+          </div>
+          </div>
+          <div class="col header__burger">
+            <div class="header__button"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <style>
+      .nav-pills .nav-link.active,
+      .nav-pills .show > .nav-link {
+        color: #fff;
+        background-color: #007bff;
+        font-size: 14px;
+        text-align: left;
+        border: 0;
+        margin-bottom: 3px;
+      }
+      .nav-pills .nav-link {
+        border-radius: 0.25rem;
+        border: 0;
+        margin-bottom: 3px;
+        font-size: 14px;
+        text-align: left;
+      }
+      h2,
+      .h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+      body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+      }
+      h3,
+      .h3 {
+        font-size: 1.2rem;
+      }
+    </style>
+
+    <div class="container" style="margin-top: 15px">
+      <div class="row" style="margin-bottom: 25px">
+        <div class="col-md-12">
+          <h1>Сведения об организации</h1>
+        </div>
+
+        <div class="col-md-3">
+          <div
+            class="nav flex-column nav-pills me-3"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <button
+              class="nav-link"
+              id="v-pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-home"
+              type="button"
+              role="tab"
+              aria-selected="false"
+            >
+              Основные сведения
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-profile"
+              type="button"
+              role="tab"
+              aria-selected="false"
+            >
+              Структура и органы управления
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-messages-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-messages"
+              type="button"
+              role="tab"
+              aria-selected="false"
+            >
+              Документы
+            </button>
+            <button
+              class="nav-link"
+              id="obr-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#obr"
+              type="button"
+              role="tab"
+              aria-selected="false"
+            >
+              Образование
+            </button>
+            <button
+              class="nav-link active"
+              id="obrs-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#obrs"
+              type="button"
+              role="tab"
+              aria-selected="true"
+            >
+              Образовательные стандарты
+            </button>
+            <button
+              class="nav-link"
+              id="ruc-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#ruc"
+              type="button"
+              role="tab"
+            >
+              Руководство. Педагогический состав
+            </button>
+            <button
+              class="nav-link"
+              id="maer-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#maer"
+              type="button"
+              role="tab"
+            >
+              Материально-техническое обеспечение
+            </button>
+
+            <button
+              class="nav-link"
+              id="stipendii-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#stipendii"
+              type="button"
+              role="tab"
+            >
+              Стипендии и иные виды поддержки
+            </button>
+            <button
+              class="nav-link"
+              id="plat-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#plat"
+              type="button"
+              role="tab"
+            >
+              Платные образовательные услуги
+            </button>
+            <button
+              class="nav-link"
+              id="finde-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#finde"
+              type="button"
+              role="tab"
+            >
+              Финансово-хозяйственная деятельность
+            </button>
+
+            <button
+              class="nav-link"
+              id="vacant-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#vacant"
+              type="button"
+              role="tab"
+            >
+              Вакантные места для приема
+            </button>
+            <button
+              class="nav-link"
+              id="mejdu-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#mejdu"
+              type="button"
+              role="tab"
+            >
+              Международное сотрудничество
+            </button>
+            <button
+              class="nav-link"
+              id="sreda-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#sreda"
+              type="button"
+              role="tab"
+            >
+              Доступная среда
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade"
+              id="v-pills-home"
+              role="tabpanel"
+              aria-labelledby="v-pills-home-tab"
+            >
+              <h2>Основные сведения</h2>
+              <table class="table table-responsive table-bordered">
+                <tbody>
+                  <tr>
+                    <td>Полное наименование образовательной организации</td>
+                    <td>
+                      бла бла бла 
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Сокращенное наименование образовательной организации (при
+                      наличии)
+                    </td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Дата создания образовательной организации</td>
+                    <td>Дата присвоения ОГРНИП: бла бла бла</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Адрес места осуществления образовательной деятельности
+                    </td>
+                    <td>
+                      000000, г. Ростов-на-Дону, бла бла бла
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Филиалы образовательной организации</td>
+                    <td>
+                      <div>Не имеются</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Представительства образовательной организации</td>
+                    <td>
+                      <div>Не имеются</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Режим и график работы</td>
+                    <td>
+                      <div>Понедельник — пятница с 10:00 до 19:00</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Контактные телефоны</td>
+                    <td>+7 918 503 8562</td>
+                  </tr>
+                  <tr>
+                    <td>Адреса электронной почты</td>
+                    <td>бла бла бла@mail.ru</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="v-pills-profile"
+              role="tabpanel"
+              aria-labelledby="v-pills-profile-tab"
+            >
+              <h2>
+                Структура и органы управления образовательной организацией
+              </h2>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td style="font-size: 12px; text-align: center">
+                      Наименование органа управления
+                    </td>
+                    <td style="font-size: 12px; text-align: center">
+                      ФИО руководителя
+                    </td>
+                    <td style="font-size: 12px; text-align: center">
+                      Должность руководителя
+                    </td>
+                    <td style="font-size: 12px; text-align: center">
+                      Адрес местонахождения
+                    </td>
+                    <td style="font-size: 12px; text-align: center">
+                      Официальный сайт
+                    </td>
+                    <td style="font-size: 12px; text-align: center">
+                      Электронная почта
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Индивидуальный предприниматель</td>
+                    <td>Мацакян Нарине Коляевна</td>
+                    <td>ИП</td>
+                    <td>
+                      344082, г. Ростов-на-Дону, улица Пушкинская, д. 25/67
+                    </td>
+                    <td>www.araik-krist-school.ru</td>
+                    <td>araikkrist@mail.ru</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="v-pills-messages"
+              role="tabpanel"
+              aria-labelledby="v-pills-messages-tab"
+            >
+              <h2>Документы</h2>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/svidetelstvo-o-postanovke-na-uchet.pdf"
+                  >Свидетельство о постановке на учет ИП</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/list-zapisi-ip.pdf"
+                  >Лист записи о государственной регистрации ИП в качестве
+                  индивидуального предпринимателя</a
+                >
+              </p>
+
+              <h3>Локальные нормативные акты</h3>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/pravila-priema-obuchajushhihsya_removed.pdf"
+                  >Копия локального нормативного акта, регламентирующего правила
+                  приема обучающихся
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/Polozhenie-o-rezhime-zanyatij-obuchajushhihsya.pdf"
+                  >Копия локального нормативного акта, регламентирующего режим
+                  занятий обучающихся</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/o-tekushhem-kontrole-uspevaemosti-promezhutochnoj-i-itogovoj-attestacii.pdf"
+                  >Копия локального нормативного акта, регламентирующего формы,
+                  периодичность и порядок текущего контроля успеваемости и
+                  промежуточной аттестации обучающихся</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/pravila-perevoda-i-otchisleniya_removed.pdf"
+                  >Копия локального нормативного акта, регламентирующего порядок
+                  и основания перевода, отчисления и восстановления обучающихся
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/poryadok-oformleniya-vozniknoveniya-priostanovleniya-prekrashheniya-otnoshenij.pdf"
+                >
+                  Копия локального нормативного акта, регламентирующего порядок
+                  оформления возникновения, приостановления и прекращения
+                  отношений между образовательной организацией и обучающимися</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/pravila-vnutrennego-rasporyadka-obuchajushhihsya-2.pdf"
+                >
+                  Копия правил внутреннего распорядка обучающихся
+                </a>
+              </p>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="obr"
+              role="tabpanel"
+              aria-labelledby="obr-tab"
+            >
+              <h2>Образование</h2>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/Reestrovaya-vypiska.pdf"
+                  >Выписка из реестра лицензий</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/polozhenie-o-yazyke-obucheniya-1.pdf"
+                  >Положение о языке обучения</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/DO-osnovy-parikmaherskogo-iskusstva.pdf"
+                  >Дополнительная общеразвивающая программа «Основы
+                  парикмахерского искусства»</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/PO-Parikmaher.pdf"
+                  >Основная программа профессионального обучения – программа
+                  подготовки по профессии 16437 «Парикмахер 3-го разряда»</a
+                >
+              </p>
+              <hr />
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>Форма обучения</td>
+                    <td>очная</td>
+                  </tr>
+                  <tr>
+                    <td>Язык обучения</td>
+                    <td>русский язык</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Численность обучающихся по реализуемым образовательным
+                      программам за счет бюджетных ассигнований федерального
+                      бюджета, бюджетов субъектов РФ, местных бюджетов
+                    </td>
+                    <td>отсутствуют</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Численность обучающихся по договорам об образовании за
+                      счет физических и (или) юридических лиц
+                    </td>
+                    <td>индивидуальное обучение</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Численность обучающихся, являющихся иностранными
+                      гражданами
+                    </td>
+                    <td>отсутствуют</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div
+              class="tab-pane fade active show"
+              id="obrs"
+              role="tabpanel"
+              aria-labelledby="obrs-tab"
+            >
+              <h2>Образовательные стандарты и требования</h2>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/Poryadok-organizacii-i-osushhestvleniya-deyatelnosti-po-dopolnitelny-obshheobrazovatelnym-programmam.pdf"
+                >
+                  ПРИКАЗ от 9 ноября 2018 года N 196 Об утверждении Порядка
+                  организации и осуществления образовательной деятельности по
+                  дополнительным общеобразовательным программам</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/Poryadok-organizacii-i-osushhestvleniya-deyatelnosti-po-osnovnym-programmam-professionalnogo-obucheniya.pdf"
+                >
+                  ПРИКАЗ от 26 августа 2020 года N 438 Об утверждении Порядка
+                  организации и осуществления образовательной деятельности по
+                  основным программам профессионального обучения</a
+                >
+              </p>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="ruc"
+              role="tabpanel"
+              aria-labelledby="ruc-tab"
+            >
+              <h2>Руководство. Педагогический состав</h2>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td style="font-size: 12px; text-align: center">ФИО</td>
+                    <td style="font-size: 12px; text-align: center">
+                      Должность
+                    </td>
+                    <td style="font-size: 12px; text-align: center">Телефон</td>
+                    <td style="font-size: 12px; text-align: center">
+                      Электронная почта
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Мацакян Нарине Коляевна</td>
+                    <td>Индивидуальный предприниматель</td>
+                    <td>8(928)102-57-51</td>
+                    <td>araikkrist@mail.ru</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/o-pedagogicheskom-sovete.pdf"
+                  >Положение о Педагогическом совете</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/Personalnyj-sostav-pedagogicheskih-rabotnikov.pdf"
+                  >Персональный состав педагогических работников</a
+                >
+              </p>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="maer"
+              role="tabpanel"
+              aria-labelledby="maer-tab"
+            >
+              <h2>
+                Материально-техническое обеспечение и оснащенность
+                образовательного процесса
+              </h2>
+              <p>
+                <a href="https://minobrnauki.gov.ru/"
+                  >Министерство науки и высшего образования Российской
+                  Федерации</a
+                >
+              </p>
+              <p>
+                <a href="https://edu.gov.ru/"
+                  >Министерство просвещения Российской Федерации</a
+                >
+              </p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <hr />
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/Polozhenie-ob-organizacii-pitaniya-obuchajushhihsya.pdf"
+                  >Положение об организации питания обучающихся</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/1_-spravka_o_MTO.pdf"
+                  >Справка о материально-техническом обеспечении</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/SPRAVKA-ob-obuchenii-LOVZ.pdf"
+                  >Справка о создании специальных условий для лиц с
+                  ограниченными возможностями здоровья</a
+                >
+              </p>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="stipendii"
+              role="tabpanel"
+              aria-labelledby="stipendii-tab"
+            >
+              <h2>Стипендии и иные виды материальной поддержки</h2>
+              <p>Стипендии не предоставляются.</p>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="plat"
+              role="tabpanel"
+              aria-labelledby="plat-tab"
+            >
+              <h2>Платные образовательные услуги</h2>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/ob-okazanii-platnyh-obrazovatelnyh-uslug.pdf"
+                  >Документ о порядке оказания платных образовательных услуг
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/DOPOBRAZOVANIE-DOGOVOR-s-obuchajushhimisya-GOTOVYJ-dvuhstoronnij.pdf"
+                  >Образец договора об оказании платных образовательных услуг
+                  (допобразование)
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/PROFOBUChENIE-DOGOVOR-s-obuchajushhimisya-GOTOVYJ-dvuhstoronnij.pdf"
+                  >Образец договора об оказании платных образовательных услуг
+                  (профобучение)
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://araik-krist-school.ru/wp-content/uploads/2022/10/prikaz-ob-utverzhdenii-stoimosti.pdf"
+                  >Документ об утверждении стоимости обучения по каждой
+                  образовательной программе
+                </a>
+              </p>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="finde"
+              role="tabpanel"
+              aria-labelledby="finde-tab"
+            >
+              <h2>Финансово-хозяйственная деятельность</h2>
+              <p><a href=""></a></p>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="vacant"
+              role="tabpanel"
+              aria-labelledby="vacant-tab"
+            >
+              <h2>Вакантные места для приема (перевода)</h2>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td style="font-size: 12px; text-align: center">Код</td>
+                    <td style="font-size: 12px; text-align: center">
+                      Наименование направления подготовки
+                    </td>
+                    <td style="font-size: 12px; text-align: center">
+                      Уровень образования
+                    </td>
+                    <td style="font-size: 12px; text-align: center">Курс</td>
+                    <td style="font-size: 12px; text-align: center">
+                      Форма обучения
+                    </td>
+                    <td style="font-size: 12px; text-align: center">
+                      Количество вакантных мест для приема
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="mejdu"
+              role="tabpanel"
+              aria-labelledby="mejdu-tab"
+            >
+              <h2>Международное сотрудничество</h2>
+              <p>
+                Договоры с иностранными и (или) международными организациями по
+                вопросам образования и науки не заключены и не планируются к
+                заключению.
+              </p>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="sreda"
+              role="tabpanel"
+              aria-labelledby="sreda-tab"
+            >
+              <h2>Доступная среда</h2>
+              <p>
+                На обучение к ИП Мацакян Нарине Коляевне по основным программам
+                профессионального обучения&nbsp; принимаются лица с
+                ограниченными возможностями здоровья — инвалиды II и III групп
+                по слуху, которым согласно заключению федерального учреждения
+                медико-социальной экспертизы не противопоказано обучение по
+                данной программе.
+              </p>
+              <p>
+                Индивидуальным предпринимателем Мацакян Нарине Коляевна
+                разработан, утвержден и размещен на сайте «Порядок организации
+                образовательного процесса инвалидов и лиц с ограниченными
+                возможностями здоровья по слуху» от 19.08.2021 г.
+              </p>
+              <p>
+                Индивидуальным предпринимателем Мацакян Нарине Коляевна заключен
+                Договор возмездного оказания услуг по сурдопереводу от «19»
+                августа 2021г.
+              </p>
+              <p>Запасной вход в здание оборудован пандусом.</p>
+              <p>Общежития, интернаты отсутствуют.</p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
