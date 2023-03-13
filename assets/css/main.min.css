@@ -3866,5 +3866,9 @@ body.visible main {
   font-weight: 400;
   font-size: calc(1.125rem + 2 * ((100vw - 20rem) / 1600));
   line-height: 160%;
-  padding: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+header .header__navigation {
+  width: auto;
 }
