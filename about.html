@@ -10,7 +10,12 @@
 
     <title>practika-school</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="assets/css/main.min.css" />
     <style>
       body {
@@ -22,15 +27,46 @@
   <body>
     <header>
       <div class="container">
-        <div class="row header align-center space-between">
+        <div class="d-flex row header align-center space-between">
           <div class="col header__logo">
-            <a href="index.html">
-              <img src="assets/upload/logo.svg" />
-            </a>
+            <img src="assets/upload/logo.svg" />
           </div>
-          <div class="col header__number">
+          <div class="col header__number align-center header__number--logo">
             <a href="tel:+79185038562">+7 918 503 8562</a>
+
+            <!-- SOCIAL MEDIA -->
+
+            <div class="d-flex header__social">
+              <a
+                class="header__social--link"
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=79185038562"
+              >
+                <img src="assets/upload/whatsapp-Icon.svg" />
+                <!-- <img src="/netcat_template/template/3/assets/upload/whatsapp-Icon.svg" /> -->
+              </a>
+
+              <a
+                class="header__social--link"
+                target="_blank"
+                href="tg://resolve?domain=USERNAME"
+              >
+                <img src="assets/upload/telegram-Icon.svg" />
+                <!-- <img src="/netcat_template/template/3/assets/upload/telegram-Icon.svg"> /> -->
+              </a>
+            </div>
+
+            <!-- SOCIAL MEDIA -->
           </div>
+
+          <div class="col header__navigation">
+            <div class="nav">
+              <a class="nav__link" href="#blog">Блог</a
+              ><a class="nav__link" href="#courses">Онлайн-курсы</a
+              ><a class="nav__link" href="javascript:void(0)">События</a
+              ><a class="nav__link" href="#about">О нас</a
+              ><a class="nav__link" href="#consult">Консультации</a>
+            </div>
           </div>
           <div class="col header__burger">
             <div class="header__button"></div>
@@ -237,9 +273,7 @@
                 <tbody>
                   <tr>
                     <td>Полное наименование образовательной организации</td>
-                    <td>
-                      бла бла бла 
-                    </td>
+                    <td>бла бла бла</td>
                   </tr>
                   <tr>
                     <td>
@@ -256,9 +290,7 @@
                     <td>
                       Адрес места осуществления образовательной деятельности
                     </td>
-                    <td>
-                      000000, г. Ростов-на-Дону, бла бла бла
-                    </td>
+                    <td>000000, г. Ростов-на-Дону, бла бла бла</td>
                   </tr>
                   <tr>
                     <td>Филиалы образовательной организации</td>
@@ -723,6 +755,10 @@
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

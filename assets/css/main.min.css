@@ -3810,11 +3810,38 @@ body.visible main {
   transition: color 0.25s;
 }
 
-.header__number--logo {
-  gap: 10px;
+/* TO UPLOAD */
+
+@media (min-width: 1200px) {
+  header .header__navigation .nav {
+    justify-content: end;
+    gap: 32px;
+  }
+
+  .header__number--logo {
+    gap: 32px;
+  }
+
+  .header__social {
+    gap: 32px;
+  }
 }
 
-/* TO UPLOAD */
+@media (min-width: 769px) and (max-width: 1199.98px) {
+  header .header__navigation .nav {
+    /* justify-content: end; */
+    gap: 16px;
+  }
+
+  .header__number--logo {
+    gap: 8px;
+  }
+
+  .header__social {
+    gap: 8px;
+  }
+}
+
 @media (max-width: 768px) {
   #courses:before {
     display: block;
@@ -3824,14 +3851,18 @@ body.visible main {
   }
 
   header .header__logo {
-    width: 35%;
+    width: 33%;
+  }
+
+  .header__number--logo {
+    gap: 4px;
   }
   .header__social--link img {
     width: 28px;
   }
 }
 
-.courses__list-description p {
+.courses__list--description p {
   font-weight: 400;
   font-size: calc(1.125rem + 2 * ((100vw - 20rem) / 1600));
   line-height: 160%;
